@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Ringwood Tour Guide</string>
+    <string name="health_and_leisure">Ringwood Health &amp; Leisure</string>
+    <string name="david_lloyld">David Lloyld Club</string>
+    <string name="category_menu_sport">Sport and Health</string>
+    <string name="category_menu_info">Information and History</string>
+    <string name="category_menu_shops">Shopping</string>
+    <string name="category_menu_food">Eating and Drinking</string>
+    <string name="category_menu_landmarks">Places of Interest</string>
+    <string name="menu_about">About</string>
+    <string name="about_text">This app was made by Simon Aust. The app was created with support
+    from the Udactiy website Android Basics Nanodegree syllabus, specifically the Android
+    Multiscreen App course (UD839). Please contact me if you
+    have any thoughts or advice. Thank you for using this app.</string>
+    <string name="health_leisure_main">The swimming pool, sports hall and exterior scenes of the
+        BBC television comedy series, The Brittas Empire, were filmed at Ringwood Health and
+        Leisure Centre, at the time known as "Ringwood Recreation Centre. Ringwood also features in
+        the new series of Channel 4's property programme Location,Location,Location in August 2016.
+        One lady referred to Ringwood as 'The Ringwood' in a similar way Wirral in Liverpool is
+        known as &apos;The Wirral&apos;.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
