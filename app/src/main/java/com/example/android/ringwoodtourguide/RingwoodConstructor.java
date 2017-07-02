@@ -5,22 +5,22 @@ package com.example.android.ringwoodtourguide;
  */
 
 public class RingwoodConstructor {
-    private String mPlaceAddress;
-    private int mPlaceDetail;
+    private int mPlaceName;
+    private int mPlaceAddress;
     private int mPlaceImage;
 
-    public RingwoodConstructor(String placeAddress, int placeDetail, int placeImage) {
-        mPlaceDetail = placeDetail;
-        mPlaceAddress = placeAddress;
+    public RingwoodConstructor(int placeAddress, int placeDetail, int placeImage) {
+        mPlaceAddress = placeDetail;
+        mPlaceName = placeAddress;
         mPlaceImage = placeImage;
     }
 
-    public String getPlaceAddress() {
-        return mPlaceAddress;
+    public int getPlaceName() {
+        return mPlaceName;
     }
 
-    public int getPlaceDetail() {
-        return mPlaceDetail;
+    public int getPlaceAddress() {
+        return mPlaceAddress;
     }
 
     public int getPlaceImage() {

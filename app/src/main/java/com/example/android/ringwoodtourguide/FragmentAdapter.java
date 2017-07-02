@@ -21,23 +21,31 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new DavidLloyldFragment();
-        } else  {
-            return new HealthAndLeisureFragment();
+            return new ShoppingActivityFragment();
+        } if (position == 1) {
+            return new DiningActivityFragment();
+        } if (position == 2) {
+            return new LandmarkActivityFragment();
+        } else {
+            return new SportActivityFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return mContext.getString(R.string.david_lloyld);
+            return mContext.getString(R.string.category_menu_shops);
+        } if (position == 1) {
+            return  mContext.getString(R.string.category_menu_food);
+        } if (position == 2) {
+            return mContext.getString(R.string.category_menu_landmarks);
         } else {
-            return mContext.getString(R.string.health_and_leisure);
+            return mContext.getString(R.string.category_menu_sport);
         }
     }
 }

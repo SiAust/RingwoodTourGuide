@@ -16,11 +16,11 @@ import java.util.ArrayList;
  * Created by Simon on 08/06/2017.
  */
 
-public class RingwoodAdapter extends ArrayAdapter<RingwoodConstructor> {
+public class LocationAdapter extends ArrayAdapter<RingwoodConstructor> {
 
-    private static final String LOG_TAG = RingwoodAdapter.class.getSimpleName();
+    private static final String LOG_TAG = LocationAdapter.class.getSimpleName();
 
-    public RingwoodAdapter(Activity context, ArrayList<RingwoodConstructor> rwood, int colorResourceId) {
+    public LocationAdapter(Activity context, ArrayList<RingwoodConstructor> rwood, int colorResourceId) {
         super(context, 0, rwood);
     }
 
@@ -33,11 +33,11 @@ public class RingwoodAdapter extends ArrayAdapter<RingwoodConstructor> {
 
         RingwoodConstructor placeList = getItem(position);
 
-            TextView placeDetail = (TextView) rwoodList.findViewById(R.id.detail_text_view);
-            placeDetail.setText(placeList.getPlaceDetail());
+            TextView placeDetail = (TextView) rwoodList.findViewById(R.id.place_details);
+            placeDetail.setText(placeList.getPlaceAddress());
 
-            TextView placeTitle = (TextView) rwoodList.findViewById(R.id.title_text_view);
-            placeTitle.setText(placeList.getPlaceAddress());
+            TextView placeTitle = (TextView) rwoodList.findViewById(R.id.place_address);
+            placeTitle.setText(placeList.getPlaceName());
 
             ImageView placeImage = (ImageView) rwoodList.findViewById(R.id.ringwood_image_view);
             placeImage.setBackgroundResource(placeList.getPlaceImage());

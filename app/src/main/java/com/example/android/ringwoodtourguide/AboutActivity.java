@@ -12,7 +12,7 @@ import android.widget.ImageView;
  * Created by Simon on 17/06/2017.
  */
 
-public class aboutActivity extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

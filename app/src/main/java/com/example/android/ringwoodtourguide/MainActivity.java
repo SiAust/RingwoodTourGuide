@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
 
         //Find the view associated with the Sport category and set a click listener on that view.
-        //Create an intent to open the SportCategoryActivity.
-        TextView textView = (TextView)findViewById(R.id.category_menu_sport);
+        //Create an intent to open the LocationActivity.
+        TextView textView = (TextView)findViewById(R.id.location_category);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sportIntent = new Intent(MainActivity.this, SportCategoryActivity.class);
+                Intent sportIntent = new Intent(MainActivity.this, LocationActivity.class);
                 startActivity(sportIntent);
             }
         });
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_settings) {
-            Intent aboutIntent = new Intent(this, aboutActivity.class);
+            Intent aboutIntent = new Intent(this, AboutActivity.class);
             startActivity(aboutIntent);
         }
         return super.onOptionsItemSelected(item);

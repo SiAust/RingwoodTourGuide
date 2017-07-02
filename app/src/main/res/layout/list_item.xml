@@ -1,52 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
-    android:minHeight="@dimen/list_item_height"
-    android:orientation="vertical">
-
-
-    <ImageView
-        android:id="@+id/ringwood_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="16dp">
 
     <!-- TODO:Add dimension variable to @dimens -->
 
-    <TextView
-        android:id="@+id/title_text_view"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/ringwood_image_view"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeight" />
+
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ringwood_image_view"
+        android:layout_gravity="center_vertical"
         android:layout_weight="1"
-        android:gravity="bottom"
-        android:textAppearance="?android:textAppearance"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        tools:text="address" />
+        android:layout_marginStart="6dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/detail_text_view"
-        android:layout_width="match_parent"
-        android:layout_below="@id/title_text_view"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="top"
-        android:textAppearance="?android:textAppearance"
-        android:textColor="@android:color/white"
-        tools:text="some info" />
+        <TextView
+            android:id="@+id/place_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            tools:text="address" />
 
+        <TextView
+            android:id="@+id/place_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@android:color/darker_gray"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="some info" />
 
+    </LinearLayout>
 
     <ImageView
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="160dp"
-        android:background="@drawable/ic_directions_white_24dp"/>
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/touch_icon" />
 
-</RelativeLayout>
+</LinearLayout>

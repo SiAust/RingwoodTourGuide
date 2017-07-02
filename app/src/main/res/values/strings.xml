@@ -1,13 +1,46 @@
 <resources>
     <string name="app_name">Ringwood Tour Guide</string>
-    <string name="health_and_leisure">Ringwood Health &amp; Leisure</string>
-    <string name="david_lloyld">David Lloyld Club</string>
+
+    <!--Location names-->
+        <!--Sport-->
+    <string name="place_health_and_leisure">Ringwood Health &amp; Leisure</string>
+    <string name="place_david_lloyd">David Lloyd Club</string>
+    <string name="place_rwood_medical">Ringwood Medical Centre</string>
+    <string name="place_cornerways">Cornerways Medical Centre</string>
+        <!--Shopping-->
+    <string name="place_fatface">Fatface</string>
+    <string name="place_waitrose">Waitrose</string>
+    <string name="place_timber">Timber</string>
+    <string name="place_rwood_surplus">Ringwood Surplus Stores</string>
+        <!--Dining-->
+    <string name="place_framptons">Frampton</string>
+    <string name="place_yolo">YOLO</string>
+    <string name="place_noisy_lobster">Noisy Lobster</string>
+    <string name="place_fish_inn">The Fish Inn</string>
+        <!--Landmarks-->
+    <string name="place_linford_bottom">Linford Bottom</string>
+    <string name="place_acorn_bench">Acorn Bench</string>
+    <string name="place_moors_valley">Moors Valley Country Park</string>
+    <string name="place_cenotaph">Ringwood Cenotaph</string>
+
+    <!--Location address-->
+        <!--Sport-->
+    <string name="address_health_and_leisure">Parsonage Barn Lane</string>
+    <string name="address_david_lloyld">242 Christchurch Rd, Ringwood BH24 3AS</string>
+    <string name="address_rwood_medical">Ringwood Medical Centre, The Close, Ringwood BH24 1JY</string>
+    <string name="address_cornerways">5 Parkers Close, Ringwood BH24 1SD</string>
+
+    <!--Category titles-->
     <string name="category_menu_sport">Sport and Health</string>
     <string name="category_menu_info">Information and History</string>
     <string name="category_menu_shops">Shopping</string>
-    <string name="category_menu_food">Eating and Drinking</string>
+    <string name="category_menu_food">Eating &amp; Drinking</string>
     <string name="category_menu_landmarks">Places of Interest</string>
-    <string name="menu_about">About</string>
+    <string name="category_menu_news">Local News</string>
+    <string name="category_menu_weather">Weather</string>
+    <string name="category_menu_about">About</string>
+
+    <!--Place details-->
     <string name="about_text">This app was made by Simon Aust. The app was created with support
     from the Udactiy website Android Basics Nanodegree syllabus, specifically the Android
     Multiscreen App course (UD839). Please contact me if you

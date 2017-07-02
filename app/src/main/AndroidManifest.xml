@@ -17,11 +17,72 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SportCategoryActivity"
+            android:name=".LocationActivity"
+            android:label="@string/category_menu_landmarks"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ShoppingActivity"
+            android:label="@string/category_menu_shops"
+            android:parentActivityName=".MainActivity"/>
+            <activity android:name=".FatfaceActivity"
+                android:label="@string/place_fatface"
+                android:parentActivityName=".ShoppingActivity"/>
+            <activity android:name=".WaitroseActivity"
+                android:label="@string/place_waitrose"
+                android:parentActivityName=".ShoppingActivity"/>
+            <activity android:name=".TimberActivity"
+                android:label="@string/place_timber"
+                android:parentActivityName=".ShoppingActivity"/>
+            <activity android:name=".RwoodSurplusActivity"
+                android:label="@string/place_rwood_surplus"
+                android:parentActivityName=".ShoppingActivity"/>
+        <activity android:name=".LandmarksActivity"
+            android:label="@string/category_menu_landmarks"
+            android:parentActivityName=".MainActivity"/>
+            <activity android:name=".LinfordActivity"
+                android:label="@string/place_linford_bottom"
+                android:parentActivityName=".LandmarksActivity"/>
+            <activity android:name=".AcornActivity"
+                android:label="@string/place_acorn_bench"
+                android:parentActivityName=".LandmarksActivity"/>
+            <activity android:name=".MoorsValleyActivity"
+                android:label="@string/place_moors_valley"
+                android:parentActivityName=".LandmarksActivity"/>
+            <activity android:name=".CenotaphActivity"
+                android:label="@string/place_cenotaph"
+                android:parentActivityName=".LandmarksActivity"/>
+        <activity android:name=".DiningActivity"
+            android:label="@string/category_menu_food"
+            android:parentActivityName=".MainActivity"/>
+            <activity android:name=".FramptonsActivity"
+                android:label="@string/place_framptons"
+                android:parentActivityName=".DiningActivity"/>
+            <activity android:name=".YoloActivity"
+                android:label="@string/place_yolo"
+                android:parentActivityName=".DiningActivity"/>
+            <activity android:name=".NoisyLobsterActivity"
+                android:label="@string/place_noisy_lobster"
+                android:parentActivityName=".DiningActivity"/>
+            <activity android:name=".FishInnActivity"
+                android:label="@string/place_fish_inn"
+                android:parentActivityName=".DiningActivity"/>
+        <activity android:name=".SportActivity"
             android:label="@string/category_menu_sport"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".aboutActivity"
-            android:label="@string/menu_about"
+            <activity android:name=".DavidLloydActivity"
+                android:label="@string/place_david_lloyd"
+                android:parentActivityName=".SportActivity"/>
+            <activity android:name=".HealthCentreActivity"
+                android:label="@string/place_health_and_leisure"
+                android:parentActivityName=".SportActivity"/>
+            <activity android:name=".RwoodMedicalActivity"
+                android:label="@string/place_rwood_medical"
+                android:parentActivityName=".SportActivity"/>
+            <activity android:name=".CornerwaysActivity"
+                android:label="@string/place_cornerways"
+                android:parentActivityName=".SportActivity"/>
+
+        <activity android:name=".AboutActivity"
+            android:label="@string/category_menu_about"
             android:parentActivityName=".MainActivity"/>
     </application>
 
